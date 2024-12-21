@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shige Liu - HomePage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 250px; /* Increased width for a larger image */
+            height: 150px; /* Fixed height for rectangular shape */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-left: 20px;
+        }
+        .profile-info {
+            flex: 1; /* Makes the text section take up the remaining space */
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc; /* Separation line between sections */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experiences</a>
+                <a href="publications.html">Publications</a>
+            </nav>
+        </header>
+        <main>
+            <section class="profile">
+                <div class="profile-info">
+                    <h1>Shige Liu</h1>
+                    <p>Ph.D. Student<br>Department of Computer Science<br>Purdue University, West Lafayette, Indiana</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:liu3529@purdue.edu">liu3529@purdue.edu</a></p>
+                        <p><strong>Phone:</strong> (765) 767-3587</p>
+                    </div>
+                </div>
+                <img src="photo.jpg" alt="Shige Liu's Photo">
+            </section>
+
+            <section>
+                <h2>Biography</h2>
+                <p>I am a Ph.D. student in the Department of Computer Science at Purdue University, advised by <a href="https://www.cs.purdue.edu/homes/csjgwang/">Jianguo Wang</a>. My research focuses on <strong>Vector Databases</strong>, <strong>Multi-Model Databases</strong>, and <strong>Retrieval-Augmented Generation (RAG)</strong>. I am passionate about building efficient and practical database systems to support emerging applications.</p>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
